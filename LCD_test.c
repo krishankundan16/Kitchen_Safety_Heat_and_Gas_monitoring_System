@@ -1,0 +1,46 @@
+
+//LCD_TEST.c
+#include "LCD.h"
+#include "delay.h"
+#include "LCD_defines.h"
+#include "types.h"
+u8 cgramLUT[40]={0x04,0x0E,0x0E,0x0E,0x1F,0X00,0x04,0x00,0x15,0x15,0x15,0x1F,0x04,0x04,0x04,0x00,0x11,0x0A,0x15,0x00,0x1F,0x11,0x0E,0x00,0x00,0x0A,0x04,0x00,0x00,0x00,0x0A,0x0A,0x0A,0x04,0x04,0x04,0x00};
+int main()
+{
+	Init_LCD();
+	WRITE_LCD_CMD(GOTO_LINE1_POS0);
+	StrLCD("LCD_TEST");
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	WRITE_LCD_DATA('A');
+	delay_ms(100);
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	WRITE_LCD_DATA(' ');
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	StrLCD("VECTOR");
+	delay_ms(100);
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	StrLCD("      ");
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	U32LCD(12345);
+	delay_ms(100);
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	StrLCD("      ");
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	S32LCD(-12345);
+	delay_ms(100);
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	StrLCD("      ");
+	WRITE_LCD_CMD(GOTO_LINE2_POS0);
+	F32LCD(123.456,3);
+	delay_ms(100);
+	WRITE_LCD_CMD(CLEAR_LCD);
+	BuildcgRAM(cgramLUT,32);
+	WRITE_LCD_DATA(0);
+	WRITE_LCD_DATA(1);
+	WRITE_LCD_DATA(2);
+	WRITE_LCD_DATA(3);
+	WRITE_LCD_DATA(4);
+	delay_ms(1000);
+	
+	while(1);
+}

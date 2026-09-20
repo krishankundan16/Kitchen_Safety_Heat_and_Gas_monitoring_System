@@ -1,0 +1,67 @@
+Dependencies for Project 'project1', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\ADC.h)(0x6AA971C3)()
+F (.\LM35.h)(0x6AA98F7B)()
+F (.\buzzer.c)(0x6AABCBED)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\buzzer.o --omf_browse .\buzzer.crf --depend .\buzzer.d)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (delay.h)(0x6A57C3BD)
+I (types.h)(0x6A7D6481)
+F (.\LM35.c)(0x6AA9935C)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\lm35.o --omf_browse .\lm35.crf --depend .\lm35.d)
+I (types.h)(0x6A7D6481)
+I (ADC.h)(0x6AA971C3)
+I (ADC_defines.h)(0x6AA96D70)
+F (.\LCD.c)(0x6A887C2A)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (types.h)(0x6A7D6481)
+I (delay.h)(0x6A57C3BD)
+I (LCD_defines.h)(0x6A87E2BC)
+I (defines.h)(0x6A7D6308)
+F (.\ADC.c)(0x6AAE668B)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (ADC_defines.h)(0x6AA96D70)
+I (pin_connect_block.h)(0x6AA97493)
+I (types.h)(0x6A7D6481)
+I (delay.h)(0x6A57C3BD)
+F (.\buzzer.h)(0x6AABBD2B)()
+F (.\rtc.c)(0x6AABEEF1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\rtc.o --omf_browse .\rtc.crf --depend .\rtc.d)
+I (types.h)(0x6A7D6481)
+I (RTC_define.h)(0x6AAADEE4)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (LCD.h)(0x6A887DBF)
+I (lcd_defines.h)(0x6A87E2BC)
+F (.\main.c)(0x6AAE6F88)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (types.h)(0x6A7D6481)
+I (ADC.h)(0x6AA971C3)
+I (LCD.h)(0x6A887DBF)
+I (LM35.h)(0x6AA98F7B)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (buzzer.h)(0x6AABBD2B)
+I (RTC.h)(0x6AAADDAE)
+I (RTC_define.h)(0x6AAADEE4)
+I (delay.h)(0x6A57C3BD)
+I (CONFIG.h)(0x6AAE5FF3)
+I (MQ2.h)(0x6AABC88E)
+F (.\CONFIG.h)(0x6AAE5FF3)()
+F (.\SENSOR.c)(0x6AAE5FF3)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\sensor.o --omf_browse .\sensor.crf --depend .\sensor.d)
+I (CONFIG.h)(0x6AAE5FF3)
+I (types.h)(0x6A7D6481)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (LM35.h)(0x6AA98F7B)
+I (buzzer.h)(0x6AABBD2B)
+I (MQ2.h)(0x6AABC88E)
+I (LCD.h)(0x6A887DBF)
+I (delay.h)(0x6A57C3BD)
+F (.\MQ2.c)(0x6AAE61DD)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\mq2.o --omf_browse .\mq2.crf --depend .\mq2.d)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (MQ2.h)(0x6AABC88E)
+I (ADC.h)(0x6AA971C3)
+I (types.h)(0x6A7D6481)
+I (ADC_defines.h)(0x6AA96D70)
+F (.\MQ2.h)(0x6AABC88E)()
+F (.\KPM.c)(0x6AAE61DD)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\kpm.o --omf_browse .\kpm.crf --depend .\kpm.d)
+I (C:\Keil\ARM\Inc\Philips\lpc21xx.h)(0x532C1500)
+I (types.h)(0x6A7D6481)
+I (kpm_define.h)(0x6AA92A69)
+I (LCD.h)(0x6A887DBF)
+I (delay.h)(0x6A57C3BD)
+F (.\delay_funcdef.c)(0x6A57C3BD)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\delay_funcdef.o --omf_browse .\delay_funcdef.crf --depend .\delay_funcdef.d)
