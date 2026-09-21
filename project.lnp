@@ -1,19 +1,4 @@
---cpu ARM7TDMI
-".\startup.o"
-".\eint0.o"
-".\delay_funcdef.o"
-".\kpm.o"
-".\lcd.o"
-".\rtc.o"
-".\sensor.o"
-".\buzzer.o"
-".\lm35.o"
-".\mq2.o"
-".\adc.o"
-".\main.o"
-".\security.o"
-".\event.o"
---strict --scatter "project.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\project.map" -o .\project.axf
+--cpu ARM7TDMI "startup.o" "eint0.o" "delay_funcdef.o" "kpm.o" "lcd.o" "rtc.o" "sensor.o" "buzzer.o" "lm35.o" "mq2.o" "adc.o" "main.o" "security.o" "event.o" --strict --scatter "project.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\project.map" -o "project.axf"

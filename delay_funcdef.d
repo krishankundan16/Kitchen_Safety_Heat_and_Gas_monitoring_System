@@ -1,1 +1,1 @@
-.\delay_funcdef.o: delay_funcdef.c
+delay_funcdef.o: delay_funcdef.c

@@ -13,7 +13,7 @@ void Init_ADC(void)
 	 //PINSEL1 |=AIN1;
 	 //cfg port pin(0,27,1);
 	// PINSEL1 |=0x15400000;
-	ADCR = (1<<PDN_BIT)|(4<<CLKDIV);
+	ADCR = (1<<PDN_BIT)|(clkDiv_value<<CLKDIV);
 }
 void Read_ADC(u32 chno,u32 *dval,f32 *eAR)
 {
