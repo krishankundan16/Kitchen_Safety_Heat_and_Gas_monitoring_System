@@ -51,7 +51,9 @@ int main()
 			
 			//Display the temperature in celseius
 		  Read_Temperature();
+     
 		  Read_Gas();
+          delay_ms(1000);
 		  Safety_status();
 			//delay_ms(500);
 			Check_New_Event();
@@ -60,7 +62,8 @@ int main()
 			//delay_ms(1000);
 			if(edit_mode == 1)
 	   {
-			edit_mode =0;
+			//edit_mode =0;
+			
 			if(CheckPassword())
 			{
 				Access_Granted();
@@ -70,8 +73,9 @@ int main()
 			{
 				Access_Denied();
 			}
+			edit_mode =0;
 		}
-		 delay_ms(100);
+		 //delay_ms(500);
 	
 		}
 }

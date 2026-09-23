@@ -10,7 +10,7 @@ u32 CheckPassword(void)
 	u32 Password;
 	WRITE_LCD_CMD(0x01);
 	StrLCD("ENTER Password");
-	delay_ms(500);
+	//delay_ms(500);
 	Password = ReadNum();
 	if(Password ==System_Password )
 	{
