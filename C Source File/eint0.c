@@ -9,7 +9,6 @@
 #include "ADC.h"
 #include "security.h"
 #include "eint0.h"
-#include "flash.h"
 
 #define EINT0_CHNO 14
 volatile u32 edit_mode =0;

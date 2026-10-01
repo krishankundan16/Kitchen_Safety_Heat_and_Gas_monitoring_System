@@ -1,7 +1,7 @@
 #include <lpc21xx.h>
 #include "ADC_defines.h"
-#include "pin_connect_block.h"
 #include "delay.h"
+#include "types.h"
 
 void Init_ADC(void)
 {

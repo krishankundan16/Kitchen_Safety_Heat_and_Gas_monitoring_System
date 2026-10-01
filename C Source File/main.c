@@ -13,7 +13,7 @@
 #include "security.h"
 #include "KPM.h"
 #include "event.h"
-#include "flash.h"
+
 
 
 s32 hour,min,sec,date,month,year,day;

@@ -6,7 +6,7 @@
 #include "MQ2.h"
 #include "LCD.h"
 #include "delay.h"
-#include "flash.h"
+
 
 u32 buzzer_muted = 0;
 u32 temp_threshold = DEFAULT_TEMP_THRESHOLD;

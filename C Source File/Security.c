@@ -2,7 +2,7 @@
 #include "LCD.h"
 #include "delay.h"
 #include "KPM.h"
-#include "flash.h"
+
 u32 System_Password =4444;
 u32 Wrong_attempt=3;
 
