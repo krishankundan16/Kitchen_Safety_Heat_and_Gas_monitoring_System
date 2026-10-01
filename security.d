@@ -1,9 +1,0 @@
-security.o: Security.c
-security.o: types.h
-security.o: LCD.h
-security.o: types.h
-security.o: delay.h
-security.o: KPM.h
-security.o: types.h
-security.o: flash.h
-security.o: types.h
