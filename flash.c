@@ -8,7 +8,7 @@
 
 #define IAP_LOCATION  0x7FFFFFF1
 #define FLASH_ADDR    0x0003F000
-#define SECTOR_NUM    26
+#define SECTOR_NUM    14
 #define CCLK_KHZ      60000
 #define CONFIG_VALID  0x5AA55AA5
 
@@ -17,8 +17,8 @@ IAP iap_entry = (IAP)IAP_LOCATION;
 
 SYSTEM_CONFIG config;
 
-extern u32 temp_threshold;
-extern u32 gas_threshold;
+//extern u32 temp_threshold;
+//extern u32 gas_threshold;
 extern u32 System_Password;
 
 //--------------------------------------------------//
@@ -42,10 +42,11 @@ void Flash_LoadConfig(void)
 
         config.temp_threshold = 50;
         config.gas_threshold = 400;
-        config.password = 1234;
-        config.valid = CONFIG_VALID;
+		config.password = 1234;
+		config.valid = CONFIG_VALID; 
+      	 
 			  Flash_SaveConfig();
-    }
+    	}
 
     SetRTCTimeInfo(config.hour,config.minute,config.second);
     SetRTCDateInfo(config.date,config.month,config.year);

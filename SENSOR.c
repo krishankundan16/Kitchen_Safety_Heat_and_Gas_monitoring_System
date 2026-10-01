@@ -6,6 +6,7 @@
 #include "MQ2.h"
 #include "LCD.h"
 #include "delay.h"
+#include "flash.h"
 
 u32 buzzer_muted = 0;
 u32 temp_threshold = DEFAULT_TEMP_THRESHOLD;
@@ -63,7 +64,7 @@ void Safety_status(void)
 	{
 		//LED On
 		LED_ON();
-		//BUZZER_ON();
+		BUZZER_ON();
 		//switch pressed
 		if((IOPIN0 &(1<<SW2))==0)
 		{

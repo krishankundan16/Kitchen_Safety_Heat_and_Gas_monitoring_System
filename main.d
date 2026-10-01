@@ -23,3 +23,5 @@ main.o: KPM.h
 main.o: types.h
 main.o: event.h
 main.o: types.h
+main.o: flash.h
+main.o: types.h

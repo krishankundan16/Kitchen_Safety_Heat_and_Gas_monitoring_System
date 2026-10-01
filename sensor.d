@@ -10,3 +10,5 @@ sensor.o: MQ2.h
 sensor.o: LCD.h
 sensor.o: types.h
 sensor.o: delay.h
+sensor.o: flash.h
+sensor.o: types.h

@@ -2,7 +2,8 @@
 #include "LCD.h"
 #include "delay.h"
 #include "KPM.h"
-u32 System_Password =1234;
+#include "flash.h"
+u32 System_Password =4444;
 u32 Wrong_attempt=3;
 
 u32 CheckPassword(void)
@@ -87,6 +88,7 @@ void change_password(void)
 	if(new_p1==new_p2)
 	{
 		System_Password = new_p1;
+
 		StrLCD("Password change");
 	}
 	else

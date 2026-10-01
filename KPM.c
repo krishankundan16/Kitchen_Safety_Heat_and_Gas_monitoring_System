@@ -5,9 +5,9 @@
 #include "delay.h"
 
 /*u32 kpmLUT[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};*/ //4x4 matrix arrangement
-u8 kpmLUT[4][4]={{'7','8','9','A'},
+u8 kpmLUT[4][4]={{'1','2','3','A'},
 				 {'4','5','6','B'},
-				 {'1','2','3','C'},
+				 {'7','8','9','C'},
 				 {'*','0','#','D'}};
 
 void InitKPM(void)
@@ -63,15 +63,32 @@ u32 ReadNum(void)
 {
 	u8 key;
 	u32 sum=0;
+	//u8 entered = 0;
+	u32 count = 0;
 	WRITE_LCD_CMD(0xC0);
 	while(1)
 	{
 		key=keyscan();
 		if(key>='0' && key<='9')
 		{
-			sum=(sum*10)+(key-48);
 			
+			sum=(sum*10)+(key-48);
+			count++;
+
 			WRITE_LCD_DATA('*');
+		}
+		else if(key == 'B')
+		{
+		 if(count > 0)
+		 {
+		   
+		   sum = sum/10;
+		   count--;
+		   WRITE_LCD_CMD(0x10);
+		   WRITE_LCD_DATA(' ');
+		   WRITE_LCD_CMD(0x10);
+
+		 }
 		}
 		else if(key == '#')
 		{
@@ -84,20 +101,44 @@ u32 ReadNum1(void)
 {
 	u8 key;
 	u32 sum=0;
+	//u8 entered = 0;
+	u32 count = 0;
 	WRITE_LCD_CMD(0xC0);
 	while(1)
 	{
 		key=keyscan();
 		if(key>='0' && key<='9')
 		{
+		   // entered = 1;
 			sum=(sum*10)+(key-48);
+			count++;
 			WRITE_LCD_DATA(key);
 		}
+
+		else if(key == 'B')
+		{
+		 if(count > 0)
+		 {
+		   count--;
+		   sum = sum/10;
+		   WRITE_LCD_CMD(0x10);
+		   WRITE_LCD_DATA(' ');
+		   WRITE_LCD_CMD(0x10);
+
+		   if(count == 0)
+		     {
+			  // entered = 0;
+			 }
+		 }
+		}
+		
 		else if(key == '#')
 		{
 			break;
 		}
 	}
+	//if(entered == 0)
+	//return 0xFFFFFFFF;
 	return sum;
 }
 

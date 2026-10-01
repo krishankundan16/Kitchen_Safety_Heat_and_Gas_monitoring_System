@@ -8,7 +8,7 @@ char week[][4] = {"SUN","MON","TUE","WED","THU","FRI","SAT"};
 void RTC_Init(void) 
 {
   // Disable and reset the RTC
-	CCR = RTC_RESET;
+	//CCR = RTC_RESET;
   #ifndef CPU_LPC2148
   // Set prescaler integer and fractional parts
 	PREINT = PREINT_VAL;

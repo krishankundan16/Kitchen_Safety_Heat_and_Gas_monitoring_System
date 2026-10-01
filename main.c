@@ -13,14 +13,15 @@
 #include "security.h"
 #include "KPM.h"
 #include "event.h"
+#include "flash.h"
 
 
 s32 hour,min,sec,date,month,year,day;
 
 int main()
 {
-	// cfg p0.1 as output 
-	//IODIR0 |=1<<EINT0_SW1;
+	
+	
 	// Initialize LCD
 	Init_LCD();
 	// Initialize ADC
@@ -30,10 +31,11 @@ int main()
 	
 	eint0_enable();
 	InitKPM();
+
 	// Set the initial time (hours, minutes, seconds)
-	SetRTCTimeInfo(10,24,40);
+	//SetRTCTimeInfo(10,24,40);
 	// Set the initial date (date, month, year)
-	SetRTCDateInfo(17,9,2026);
+	//SetRTCDateInfo(17,9,2026);
 	// LED AND SW Initialize
 
 
@@ -62,7 +64,7 @@ int main()
 			//delay_ms(1000);
 			if(edit_mode == 1)
 	   {
-			//edit_mode =0;
+			edit_mode =0;
 			
 			if(CheckPassword())
 			{
@@ -73,7 +75,7 @@ int main()
 			{
 				Access_Denied();
 			}
-			edit_mode =0;
+			
 		}
 		 //delay_ms(500);
 	

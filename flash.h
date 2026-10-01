@@ -12,7 +12,7 @@ typedef struct
     u8 month;
     u32 year;
 
-    u8 temp_threshold;
+    u32 temp_threshold;
     u32 gas_threshold;
 	u32 password;
 
