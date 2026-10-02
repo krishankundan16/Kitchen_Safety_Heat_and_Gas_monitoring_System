@@ -33,9 +33,9 @@ int main()
 	InitKPM();
 
 	// Set the initial time (hours, minutes, seconds)
-	//SetRTCTimeInfo(10,24,40);
+	SetRTCTimeInfo(10,24,40);
 	// Set the initial date (date, month, year)
-	//SetRTCDateInfo(17,9,2026);
+	SetRTCDateInfo(17,9,2026);
 	// LED AND SW Initialize
 
 

@@ -64,7 +64,7 @@ void Safety_status(void)
 	{
 		//LED On
 		LED_ON();
-		//BUZZER_ON();
+		
 		//switch pressed
 		if((IOPIN0 &(1<<SW2))==0)
 		{
@@ -79,7 +79,7 @@ void Safety_status(void)
 	}		
 	else
 	{
-		// safe
+		// safe condition buzzer and led remain off
 		LED_OFF();
 		BUZZER_OFF();
 		buzzer_muted = 0;

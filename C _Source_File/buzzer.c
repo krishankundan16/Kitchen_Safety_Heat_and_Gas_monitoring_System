@@ -2,17 +2,18 @@
 #include "delay.h"
 #include "types.h"
 #include "CONFIG.h"
+#include "defines.h"
 	
 void BUZZER_ON()
 {
-	// p0.1 as output
-	IODIR0 |=(1<<BUZZER_PIN);
+	// p0.5 as output
+	IODIR0 |=(1<<BUZZER_PIN); // cfg p0.5 as buzzer pin in CONFIG Header file
 	// buzzer on
 	IOSET0=(1<<BUZZER_PIN);
 }
 void BUZZER_OFF()
 {
-	// p0.1 as output
+	// p0.5 as output
 	IODIR0 |=(1<<BUZZER_PIN);
 	//buzzer on
 	IOCLR0=1<<BUZZER_PIN;

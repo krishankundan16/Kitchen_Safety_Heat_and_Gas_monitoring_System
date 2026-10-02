@@ -10,7 +10,7 @@
 
 #define RTC_CLKSRC (1<<4) 
 
-#define CPU_LPC2148
+#define CPU_LPC2129
 
 #define SUN 0
 #define MON 1
