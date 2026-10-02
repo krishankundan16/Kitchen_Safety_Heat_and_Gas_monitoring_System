@@ -3,7 +3,7 @@
 #include "delay.h"
 #include "KPM.h"
 
-u32 System_Password =4444;
+u32 System_Password =222;
 u32 Wrong_attempt=3;
 
 u32 CheckPassword(void)

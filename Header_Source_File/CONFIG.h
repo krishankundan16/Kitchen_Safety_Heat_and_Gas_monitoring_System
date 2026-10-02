@@ -8,8 +8,7 @@ void Safety_status(void);
 #define DEFAULT_TEMP_THRESHOLD 30
 #define DEFAULT_GAS_THRESHOLD  500
 
-extern u32 temp_threshold;
-extern u32 gas_threshold;
+
 #define LED_PIN 0
 #define BUZZER_PIN 5
 #define SW2 2

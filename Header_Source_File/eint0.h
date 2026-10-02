@@ -17,4 +17,7 @@ void edit_year(void);
 void edit_day_month_year(void);
 void edit_threshold(void);
 void invalid_input(void);
+
+extern u32 temp_threshold;
+extern u32 gas_threshold;
 #define EINT0_SW1 1

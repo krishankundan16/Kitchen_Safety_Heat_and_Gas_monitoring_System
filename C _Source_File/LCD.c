@@ -1,6 +1,6 @@
 //LCD.c
 #include<lpc21xx.h>
-#include"types.h"
+#include "types.h"
 #include "delay.h"
 #include "LCD_defines.h"
 #include "defines.h"

@@ -80,12 +80,12 @@
         <Book>
           <Number>0</Number>
           <Title>Data Sheet</Title>
-          <Path>DATASHTS\PHILIPS\LPC2119_2129.PDF</Path>
+          <Path>DATASHTS\PHILIPS\LPC2141_42_44_46_48.PDF</Path>
         </Book>
         <Book>
           <Number>1</Number>
           <Title>User Manual</Title>
-          <Path>DATASHTS\PHILIPS\user_manual_LPC2119_2129_2194_2292_2294.PDF</Path>
+          <Path>DATASHTS\PHILIPS\user_manual_LPC214x.pdf</Path>
         </Book>
       </Books>
       <DllOpt>
@@ -109,7 +109,7 @@
         <sRfunc>1</sRfunc>
         <sRbox>1</sRbox>
         <tLdApp>1</tLdApp>
-        <tGomain>1</tGomain>
+        <tGomain>0</tGomain>
         <tRbreak>1</tRbreak>
         <tRwatch>1</tRwatch>
         <tRmem>1</tRmem>
@@ -117,7 +117,7 @@
         <tRbox>1</tRbox>
         <sRunDeb>0</sRunDeb>
         <sLrtime>0</sLrtime>
-        <nTsel>0</nTsel>
+        <nTsel>-1</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -128,34 +128,17 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
-        <pMon>BIN\UL2ARM.DLL</pMon>
+        <pMon></pMon>
       </DebugOpt>
-      <TargetDriverDllRegistry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>DLGDARM</Key>
-          <Name>(134=-1,-1,-1,-1,0)(135=-1,-1,-1,-1,0)(153=-1,-1,-1,-1,0)(154=-1,-1,-1,-1,0)(108=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(105=-1,-1,-1,-1,0)(145=-1,-1,-1,-1,0)(147=-1,-1,-1,-1,0)(80=-1,-1,-1,-1,0)(104=-1,-1,-1,-1,0)(100=-1,-1,-1,-1,0)(101=-1,-1,-1,-1,0)(160=828,182,1416,377,0)(161=-1,-1,-1,-1,0)(113=-1,-1,-1,-1,0)(112=-1,-1,-1,-1,0)(137=-1,-1,-1,-1,0)(138=-1,-1,-1,-1,0)(117=-1,-1,-1,-1,0)(146=-1,-1,-1,-1,0)(110=-1,-1,-1,-1,0)(111=-1,-1,-1,-1,0)(114=-1,-1,-1,-1,0)(141=-1,-1,-1,-1,0)(142=-1,-1,-1,-1,0)(143=-1,-1,-1,-1,0)(144=-1,-1,-1,-1,0)(115=-1,-1,-1,-1,0)(116=-1,-1,-1,-1,0)</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>ARMDBGFLAGS</Key>
-          <Name>-T5F</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>UL2ARM</Key>
-          <Name>UL2ARM(-U268761108 -O7 -C0 -FO15  -FN1 -FC800 -FD40000000 -FF0LPC_IAP_256 -FL03E000 -FS00</Name>
-        </SetRegEntry>
-      </TargetDriverDllRegistry>
       <DebugFlag>
         <trace>0</trace>
-        <periodic>0</periodic>
-        <aLwin>1</aLwin>
+        <periodic>1</periodic>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>1</viewmode>
+        <viewmode>0</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -170,7 +153,7 @@
         <aSer4>0</aSer4>
         <StkLoc>0</StkLoc>
         <TrcWin>0</TrcWin>
-        <newCpu>0</newCpu>
+        <newCpu>1</newCpu>
         <uProt>0</uProt>
       </DebugFlag>
       <LintExecutable></LintExecutable>
@@ -184,8 +167,8 @@
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <File>
-      <GroupNumber>1</GroupNumber>
-      <FileNumber>14</FileNumber>
+      <GroupNumber>0</GroupNumber>
+      <FileNumber>0</FileNumber>
       <FileType>2</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -198,7 +181,7 @@
       <FilenameWithoutPath>Startup.s</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -212,7 +195,7 @@
       <FilenameWithoutPath>ADC.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -226,21 +209,21 @@
       <FilenameWithoutPath>buzzer.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\delay_funcdef.c</PathWithFileName>
       <FilenameWithoutPath>delay_funcdef.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -254,7 +237,7 @@
       <FilenameWithoutPath>eint0.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -268,7 +251,7 @@
       <FilenameWithoutPath>event.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -282,7 +265,7 @@
       <FilenameWithoutPath>KPM.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -296,7 +279,7 @@
       <FilenameWithoutPath>LCD.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
@@ -310,71 +293,71 @@
       <FilenameWithoutPath>LM35.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\MQ2.c</PathWithFileName>
       <FilenameWithoutPath>MQ2.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\rtc.c</PathWithFileName>
       <FilenameWithoutPath>rtc.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\Security.c</PathWithFileName>
       <FilenameWithoutPath>Security.c</FilenameWithoutPath>
     </File>
     <File>
-      <GroupNumber>1</GroupNumber>
+      <GroupNumber>0</GroupNumber>
       <FileNumber>0</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>1</TopLine>
-      <CurrentLine>1</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\C Source File\SENSOR.c</PathWithFileName>
       <FilenameWithoutPath>SENSOR.c</FilenameWithoutPath>
@@ -405,8 +388,8 @@
     <MDIClientArea>
       <RegID>0</RegID>
       <MDITabState>
-        <Len>1708</Len>
-        <Data>01000000040000000100000001000000010000000100000001000000FFFFFFFF000000000100000001000000000000002800000028000000010000000D00000007000000010000005E453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C53454E534F522E63000000000853454E534F522E6300000000C5D4F200FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4144432E6300000000054144432E6300000000C5D4F200FFFFFFFF5E453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C62757A7A65722E63000000000862757A7A65722E6300000000FFDC7800FFFFFFFF65453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C64656C61795F66756E636465662E63000000000F64656C61795F66756E636465662E6300000000BECEA100FFFFFFFF5D453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C65696E74302E63000000000765696E74302E6300000000F0A0A100FFFFFFFF5D453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C6576656E742E6300000000076576656E742E6300000000BCA8E100FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4B504D2E6300000000054B504D2E63000000009CC1B600FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4C43442E6300000000054C43442E6300000000F7B88600FFFFFFFF5C453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4C4D33352E6300000000064C4D33352E6300000000D9ADC200FFFFFFFF5C453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C6D61696E2E6300000000066D61696E2E6300000000A5C2D700FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4D51322E6300000000054D51322E6300000000B3A6BE00FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C7274632E6300000000057274632E6300000000EAD6A300FFFFFFFF60453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C53656375726974792E63000000000A53656375726974792E6300000000F6FA7D00FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000100000002000000D60000005E0000001005000075010000</Data>
+        <Len>986</Len>
+        <Data>01000000040000000100000001000000010000000100000001000000FFFFFFFF000000000100000001000000000000002800000028000000010000000700000006000000010000005B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4144432E6300000000054144432E6300000000F0A0A100FFFFFFFF5E453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C62757A7A65722E63000000000862757A7A65722E6300000000FFDC7800FFFFFFFF5D453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C65696E74302E63000000000765696E74302E6300000000BECEA100FFFFFFFF5D453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C6576656E742E6300000000076576656E742E6300000000F0A0A100FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4B504D2E6300000000054B504D2E6300000000BCA8E100FFFFFFFF5B453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4C43442E6300000000054C43442E63000000009CC1B600FFFFFFFF5C453A5C563235484531314B385C4D494E495F50524F4A4543545C4B49544348454E5F5341464554595F484541545F414E445F4741535F4D4F4E49544F52494E475F53595354454D5C4320534F555243452046494C455C4C4D33352E6300000000064C4D33352E6300000000F7B88600FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000100000002000000D60000005E0000001005000075010000</Data>
       </MDITabState>
     </MDIClientArea>
     <ViewEx>
@@ -1357,14 +1340,8 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>7</ActiveTab>
+      <ActiveTab>6</ActiveTab>
       <Documents>
-        <Doc>
-          <Name>.\C Source File\SENSOR.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
         <Doc>
           <Name>.\C Source File\ADC.c</Name>
           <ColumnNumber>0</ColumnNumber>
@@ -1373,12 +1350,6 @@
         </Doc>
         <Doc>
           <Name>.\C Source File\buzzer.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\C Source File\delay_funcdef.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>
@@ -1409,30 +1380,6 @@
         </Doc>
         <Doc>
           <Name>.\C Source File\LM35.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\C Source File\main.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\C Source File\MQ2.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\C Source File\rtc.c</Name>
-          <ColumnNumber>0</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>1</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\C Source File\Security.c</Name>
           <ColumnNumber>0</ColumnNumber>
           <TopLine>1</TopLine>
           <CurrentLine>1</CurrentLine>

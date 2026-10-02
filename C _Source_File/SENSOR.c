@@ -64,7 +64,7 @@ void Safety_status(void)
 	{
 		//LED On
 		LED_ON();
-		BUZZER_ON();
+		//BUZZER_ON();
 		//switch pressed
 		if((IOPIN0 &(1<<SW2))==0)
 		{

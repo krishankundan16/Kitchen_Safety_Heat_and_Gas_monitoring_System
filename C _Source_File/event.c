@@ -169,7 +169,7 @@ void Check_Event_Display(void)
 
         Event_Display();
 				delay_ms(2000);
-				// Normal_Display();
+				 //Normal_Display();
     }
 }
 

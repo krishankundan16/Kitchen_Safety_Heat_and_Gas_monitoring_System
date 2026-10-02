@@ -43,7 +43,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>project</OutputName>
+          <OutputName>kitchen_safety</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -127,7 +127,7 @@
           <Target>
             <UseTarget>0</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
-            <RunToMain>1</RunToMain>
+            <RunToMain>0</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
             <RestoreWatchpoints>1</RestoreWatchpoints>
             <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
@@ -135,7 +135,7 @@
             <RestoreToolbox>1</RestoreToolbox>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>0</TargetSelection>
+          <TargetSelection>-1</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -149,15 +149,15 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\UL2ARM.DLL</Driver>
+            <Driver></Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
           <Flash1>
-            <UseTargetDll>1</UseTargetDll>
-            <UseExternalTool>0</UseExternalTool>
+            <UseTargetDll>0</UseTargetDll>
+            <UseExternalTool>1</UseExternalTool>
             <RunIndependent>0</RunIndependent>
-            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
             <DriverSelection>4096</DriverSelection>
           </Flash1>
@@ -345,7 +345,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Header Source File</IncludePath>
+              <IncludePath>.\Header_Source_File</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -360,7 +360,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Header Source File</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -372,7 +372,7 @@
             <useFile>0</useFile>
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x40000000</DataAddressRange>
-            <ScatterFile>project.sct</ScatterFile>
+            <ScatterFile></ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
@@ -391,69 +391,69 @@
               <FilePath>.\Startup.s</FilePath>
             </File>
             <File>
-              <FileName>ADC.c</FileName>
+              <FileName>LCD.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\C Source File\ADC.c</FilePath>
-            </File>
-            <File>
-              <FileName>buzzer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\buzzer.c</FilePath>
+              <FilePath>.\C _Source_File\LCD.c</FilePath>
             </File>
             <File>
               <FileName>delay_funcdef.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\C Source File\delay_funcdef.c</FilePath>
-            </File>
-            <File>
-              <FileName>eint0.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\eint0.c</FilePath>
-            </File>
-            <File>
-              <FileName>event.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\event.c</FilePath>
-            </File>
-            <File>
-              <FileName>KPM.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\KPM.c</FilePath>
-            </File>
-            <File>
-              <FileName>LCD.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\LCD.c</FilePath>
-            </File>
-            <File>
-              <FileName>LM35.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\LM35.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>MQ2.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\MQ2.c</FilePath>
-            </File>
-            <File>
-              <FileName>rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\rtc.c</FilePath>
-            </File>
-            <File>
-              <FileName>Security.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\C Source File\Security.c</FilePath>
+              <FilePath>.\C _Source_File\delay_funcdef.c</FilePath>
             </File>
             <File>
               <FileName>SENSOR.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\C Source File\SENSOR.c</FilePath>
+              <FilePath>.\C _Source_File\SENSOR.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>buzzer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\buzzer.c</FilePath>
+            </File>
+            <File>
+              <FileName>eint0.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\eint0.c</FilePath>
+            </File>
+            <File>
+              <FileName>event.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\event.c</FilePath>
+            </File>
+            <File>
+              <FileName>KPM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\KPM.c</FilePath>
+            </File>
+            <File>
+              <FileName>LM35.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\LM35.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>MQ2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\MQ2.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>Security.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\C _Source_File\Security.c</FilePath>
             </File>
           </Files>
         </Group>
