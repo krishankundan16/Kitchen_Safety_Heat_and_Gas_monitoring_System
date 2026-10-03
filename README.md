@@ -41,11 +41,11 @@ The system continuously samples ambient temperature via an analog LM35 sensor (1
 
 ## System Block Diagram
 
-![Block Diagram](project_img/Block_diagram.jpg)
+![Block Diagram](Block_diagram/Blockdiagram.jpg)
 
 ## Flowchart
 
-![Flowchart](project_img/Flowchart.jpg)
+![Flowchart](Flow_Chart/flowchart.jpg)
 
 ## Project Workflow
 
