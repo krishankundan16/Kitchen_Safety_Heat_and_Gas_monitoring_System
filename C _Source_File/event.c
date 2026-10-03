@@ -126,7 +126,7 @@ void Event_Display(void)
         WRITE_LCD_CMD(GOTO_LINE2_POS0);
         StrLCD("T:");
         F32LCD(latest_event.value,2);
-        //StrLCD(" ");
+        
     }
     else if(latest_event.sensor == 2)
     {
@@ -134,7 +134,7 @@ void Event_Display(void)
         WRITE_LCD_CMD(GOTO_LINE2_POS0);
         StrLCD("G:");
         U32LCD(latest_event.value);
-        //StrLCD(" ");
+        
     }
 		else
 		{
@@ -160,8 +160,6 @@ void Event_Display(void)
 
 
 //static u32 last_time = 0;
-//static u32 event_display_start_time = 0;
-//static u8 event_display_active = 0;
 
 void Check_Event_Display(void)
 {
@@ -169,7 +167,7 @@ void Check_Event_Display(void)
     u32 current_time;
 
     GetRTCTimeInfo(&hour, &minute, &second);
-
+	 // Calculate current time 
     current_time = ((u32)hour * 3600) +
                    ((u32)minute * 60) +
                    (u32)second;
@@ -180,8 +178,9 @@ void Check_Event_Display(void)
        if((current_time - last_time) >= 10)
       { 
         last_time = current_time;
-
+		// Display the new event
         Event_Display();
+		// Display event for 2 second
 				delay_ms(2000);
 				 
     }

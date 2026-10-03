@@ -32,13 +32,6 @@ int main()
 	eint0_enable();
 	InitKPM();
 
-	// Set the initial time (hours, minutes, seconds)
-	SetRTCTimeInfo(10,24,40);
-	// Set the initial date (date, month, year)
-	SetRTCDateInfo(17,9,2026);
-	// LED AND SW Initialize
-
-
 	while (1) 
     {
        // Get and display the current time info on LCD
@@ -65,19 +58,20 @@ int main()
 			if(edit_mode == 1)
 	   {
 			edit_mode =0;
-			
+			// Check password function
 			if(CheckPassword())
-			{
+			{	// If password is correct display access granted
 				Access_Granted();
+				// By using Edit_menu function we can edit time , date, temp and password
 				Edit_Menu();
 			}
 			else
-			{
+			{	// If password is wrong display access denied
 				Access_Denied();
 			}
 			
 		}
-		 //delay_ms(500);
+		 
 	
 		}
 }
