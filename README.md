@@ -115,4 +115,5 @@ Kitchen_Safety_Heat_and_Gas_Monitoring_System/
 
 ## Author
 
-Bhanu prakash
+Krishan Kundan
+Student - Vector India Hyderabad
